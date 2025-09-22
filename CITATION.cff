@@ -1,0 +1,28 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: booklet
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: August
+    family-names: Frisk
+    orcid: 'https://orcid.org/0009-0007-9200-8438'
+    email: friska@oregonstate.edu
+    affiliation: Oregon State University
+repository-code: 'https://github.com/4N0NYM0U5MY7H/CS361_Course_Project'
+abstract: >-
+  This full-term project uses a microservices architecture
+  to track reading completed by the user. The project is
+  developed using agile methodologies. The user interface
+  adheres to the 8 Cognitive Style Hueristics (CSH). Data
+  persistence is provided using Python's built-in SQLite3
+  library. Microservices for this project are provided by
+  @jay2002shah.
+license: MIT
+commit: ee7f646e185d5b2bec70127578ef3c1c294b9c62
+version: 2.1.2
+date-released: '2023-03-19'
