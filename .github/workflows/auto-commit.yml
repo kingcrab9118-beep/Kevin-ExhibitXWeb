@@ -1,0 +1,32 @@
+name: Auto Commit Bot (Weekdays Only)
+
+on:
+  schedule:
+    - cron: "0 9 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: main
+
+      - name: Make a change
+        run: |
+          echo "Last updated: $(date)" > heartbeat.txt
+
+      - name: Commit & Push changes
+        run: |
+          git config user.name "Kevin Woo"
+          git config user.email "kingcrab9118@gmail.com"
+          git add heartbeat.txt
+          git commit -m "chore: weekday heartbeat [skip ci]" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
