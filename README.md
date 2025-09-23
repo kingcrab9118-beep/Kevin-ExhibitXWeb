@@ -22,7 +22,7 @@ Because you've already forgotten what you've read!
 This full-term project uses a microservices architecture to track reading completed by the user.  The project is developed using agile methodologies.  The user interface adheres to the 8 Cognitive Style Hueristics (CSH).  Data persistence is provided using Python's built-in SQLite3 library.  Microservices for this project are provided by @[jay2002shah](https://github.com/jay2002shah/).
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine.
+These instructions will get you a copy of the project up and running on your local machine and the others.
 
 ### Prerequisites
 You need to have a machine with [Python 3.10.x](https://www.python.org/downloads/release/python-3100/) installed.
