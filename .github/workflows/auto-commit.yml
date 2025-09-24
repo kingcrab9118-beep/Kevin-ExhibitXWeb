@@ -2,7 +2,7 @@ name: Auto Commit Bot (Weekdays Only)
 
 on:
   schedule:
-    - cron: "0 9 * * 1-5"
+    - cron: "0 9 * * 1-6"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          ref: main
+          ref: develop
 
       - name: Make a change
         run: |
